@@ -1,23 +1,21 @@
 {
-	// See https://foundryvtt.com/article/system-development/ for what various fields are
+	"_reminder": "// See https://foundryvtt.com/article/system-development/ for what various fields are",
 	"name": "gyro-system",
 	"title": "GYRO System",
 	"description": "GYRO system support for games like Sentinel Comics RPG",
-	"version": 0.36,
+	"version": 0.1,
 	"minimumCoreVersion": "0.5.6",
 	"compatibleCoreVersion": "0.5.7",
 	"templateVersion": 2,
 	"author": "Fred Hicks",
-	"styles": [
-		"styles/simple.css"
-	],
+	"styles": [],
 	"packs": [],
 	"languages": [],
 	"gridDistance": 5,
 	"gridUnits": "ft",
 	"primaryTokenAttribute": "health",
 	"url": "https://github.com/fredhicks/gyro-system/",
-	"manifest": "https://github.com/fredhicks/gyro-system/raw/master/system.json", // haven't double checked
-	"download": "https://github.com/fredhicks/gyro-system/releases/latest.zip", // probably needs something different
+	"manifest": "https://github.com/fredhicks/gyro-system/raw/master/system.json", 
+	"download": "https://github.com/fredhicks/gyro-system/releases/latest.zip", 
 	"license": "LICENSE.txt"
 }

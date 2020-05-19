@@ -1,0 +1,153 @@
+{
+
+   "Actor": {
+      "types": [
+         "hero"
+         ,"minion"
+      ]
+
+      ,
+      "templates": {
+         "common": {
+            "description": {
+               "value": ""
+            }
+         },
+         "full": {
+	    "health": {
+	       "value": 30,
+	       "min": 0,
+	       "max": 30
+	    }
+	    ,
+	    "powers": {}
+	    ,
+	    "qualities": {}
+	    ,
+	    "status": {}
+	    ,
+	    "abilities": {}
+         }
+      }
+
+      ,
+      "hero": {
+         "templates": ["common","full"]
+	 ,
+	 "health": {
+	    "green": {
+	       "max": 30,
+	       "min": 21
+	    }
+	    ,
+	    "yellow": {
+	       "max": 20,
+	       "min": 11
+	    }
+	    ,
+	    "red": {
+	       "max": 10,
+	       "min": 1
+	    }
+	    ,
+	    "out": {
+	       "max": 0,
+	       "min": 0
+	    }
+	 }
+	 ,
+	 "status": {
+	    "green": { "value": 4 },
+	    "yellow": { "value": 4 },
+	    "red": { "value": 4 }
+	 }
+	 , 
+	 "principles": {}
+	 ,
+	 "backissues": {}
+	 , 
+	 "collections": {}
+	 ,
+	 "heropoints": {
+	    "earned": { "value": 0, "min": 0, "max": 5 }
+	    , 
+	    "rewards": {
+	       "+1": 0, "+2": 0, "+3": 0, "+4": 0
+	    }
+	 }
+	 ,
+	 "characteristics": {
+	    "background": ""
+	    ,
+	    "powersource": ""
+	    ,
+	    "archetype": ""
+	    ,
+	    "personality": ""
+	 }
+	 ,
+	 "alias": ""
+      }
+
+      ,
+      "minion": {
+	 "templates": ["common"],
+	 "lieutenant": false,
+	 "size": {
+	    "value": 4,
+	    "min": 4,
+	    "max": 12
+	 },
+	 "abilities": {}
+      }
+
+   }
+
+   ,
+
+   "Item": {
+      "types": ["ability","quality","power"]
+
+      ,
+      "templates": {
+         "common": {
+            "description": {
+               "value": ""
+            }
+         }
+	 ,
+	 "die": {
+	    "die": {
+               "value": 4,
+	       "min": 4,
+	       "max": 12
+	    }
+	 }
+      }
+
+      ,
+      "quality": {
+	 "templates": ["common","die"]
+      }
+
+      ,
+      "power": {
+	 "templates": ["common","die"]
+      }
+
+      ,
+      "ability": {
+	 "templates": ["common"]
+	 ,
+	 "zone": ""
+	 ,
+	 "icons": []
+	 ,
+	 "type": ""
+	 ,
+	 "gametext": ""
+      }
+
+   }
+
+}
